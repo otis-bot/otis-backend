@@ -1,0 +1,14 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'bin/**/*'
+Metrics/LineLength:
+  Include:
+    - 'app/**/*'
+  Max: 120
+
+Style/Documentation:
+  Enabled: False
+
+Rails:
+  Enabled: true
