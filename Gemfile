@@ -4,6 +4,7 @@ gem 'rails', '4.2.6'
 gem 'rails-api'
 gem 'pg'
 
+gem 'grape'
 gem 'httparty'
 gem 'pry-rails'
 
