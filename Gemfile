@@ -4,6 +4,9 @@ gem 'rails', '4.2.6'
 gem 'rails-api'
 gem 'pg'
 
+gem 'httparty'
+gem 'pry-rails'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
