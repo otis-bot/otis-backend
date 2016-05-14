@@ -153,3 +153,6 @@ DEPENDENCIES
   shoulda-matchers
   spring
   spring-commands-rspec
+
+BUNDLED WITH
+   1.12.3
