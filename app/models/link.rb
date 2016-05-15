@@ -1,8 +1,6 @@
 class Link < ActiveRecord::Base
-  has_many :comments
-  # rubocop:disable HasAndBelongsToMany
-  has_and_belongs_to_many :tags
-  # rubocop:enable HasAndBelongsToMany
+  has_many :comments, dependent: :destroy
+  has_many :tags, through: :links_tags
 
   validates :uri, presence: true
 end
