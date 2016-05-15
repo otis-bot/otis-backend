@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe AuthToken do
   it 'encodes and decodes tokens' do
     token = AuthToken.encode(foo: 'bar')
