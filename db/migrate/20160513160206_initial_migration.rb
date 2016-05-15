@@ -14,13 +14,10 @@ class InitialMigration < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-    create_table :links_tags do |t|
+    create_table :links_tags, id: false do |t|
       t.belongs_to :link, index: true
       t.belongs_to :tag, index: true
     end
-    
-    add_foreign_key :links, :link_tags
-    add_foreign_key :tags, :link_tags
     
     add_foreign_key :links, :tags
     add_foreign_key :tags, :links
