@@ -150,6 +150,3 @@ DEPENDENCIES
   rubocop
   spring
   spring-commands-rspec
-
-BUNDLED WITH
-   1.11.2
