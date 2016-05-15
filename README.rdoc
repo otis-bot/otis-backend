@@ -1,30 +1,5 @@
 https://codeship.com/projects/3b22b880-f94e-0133-aa46-6ecdbb95c520/status?branch=master
 
-== README
+##Licensing Information
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Otis-Bot is subject to the terms of the MIT License Agreement, available [here](MITLicense.md).
