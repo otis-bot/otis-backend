@@ -6,6 +6,7 @@ gem 'pg'
 
 gem 'grape'
 gem 'httparty'
+gem 'jwt'
 gem 'pry-rails'
 
 group :development do

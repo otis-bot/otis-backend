@@ -8,4 +8,8 @@ class User < ActiveRecord::Base
 
     user
   end
+
+  def auth_token
+    AuthToken.encode(user_id: id)
+  end
 end

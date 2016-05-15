@@ -24,4 +24,18 @@ RSpec.describe User, type: :model do
       expect(db_user.id).to eq updated_user.id
     end
   end
+
+  describe '.auth_token' do
+    it 'returns a JWT token with the user id' do
+      user = build(:user, id: 1)
+
+      expect(AuthToken).to receive(:encode)
+        .with(user_id: 1)
+        .and_return('TOKEN')
+
+      token = user.auth_token
+
+      expect(token).to eq 'TOKEN'
+    end
+  end
 end
