@@ -15,9 +15,15 @@ class InitialMigration < ActiveRecord::Migration
     end
 
     create_table :links_tags do |t|
-      t.belongs_to :links, index: true
-      t.belongs_to :tags, index: true
+      t.belongs_to :link, index: true
+      t.belongs_to :tag, index: true
     end
+    
+    add_foreign_key :links, :link_tags
+    add_foreign_key :tags, :link_tags
+    
+    add_foreign_key :links, :tags
+    add_foreign_key :tags, :links
 
     create_table :comments do |t|
       t.belongs_to :link, index: true
@@ -25,5 +31,7 @@ class InitialMigration < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    
+    add_foreign_key :links, :comments
   end
 end

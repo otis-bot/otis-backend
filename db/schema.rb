@@ -34,16 +34,15 @@ ActiveRecord::Schema.define(version: 20160513160206) do
   end
 
   create_table "links_tags", force: :cascade do |t|
-    t.integer "links_id"
-    t.integer "tags_id"
+    t.integer "link_id"
+    t.integer "tag_id"
   end
 
-  add_index "links_tags", ["links_id"], name: "index_links_tags_on_links_id", using: :btree
-  add_index "links_tags", ["tags_id"], name: "index_links_tags_on_tags_id", using: :btree
+  add_index "links_tags", ["link_id"], name: "index_links_tags_on_link_id", using: :btree
+  add_index "links_tags", ["tag_id"], name: "index_links_tags_on_tag_id", using: :btree
 
   create_table "tags", force: :cascade do |t|
     t.string   "name"
-    t.integer  "sequence"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
