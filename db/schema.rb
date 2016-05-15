@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20160513160206) do
     t.datetime "updated_at",     null: false
   end
 
-  create_table "links_tags", force: :cascade do |t|
+  create_table "links_tags", id: false, force: :cascade do |t|
     t.integer "link_id"
     t.integer "tag_id"
   end
@@ -47,4 +47,7 @@ ActiveRecord::Schema.define(version: 20160513160206) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "comments", "links"
+  add_foreign_key "links_tags", "links"
+  add_foreign_key "links_tags", "tags"
 end
