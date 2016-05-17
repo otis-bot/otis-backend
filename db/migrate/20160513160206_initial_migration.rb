@@ -9,7 +9,7 @@ class InitialMigration < ActiveRecord::Migration
     end
 
     create_table :tags do |t|
-      t.string :name
+      t.string :name, index: true
 
       t.timestamps null: false
     end
