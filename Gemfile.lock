@@ -122,6 +122,8 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.0)
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
     spring (1.7.1)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -148,8 +150,6 @@ DEPENDENCIES
   rails-api
   rspec-rails
   rubocop
+  shoulda-matchers
   spring
   spring-commands-rspec
-
-BUNDLED WITH
-   1.11.2
