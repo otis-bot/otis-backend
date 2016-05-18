@@ -1,0 +1,41 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/brandon/Firehose/otis/otis-backend/app/models/comment.rb": [
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/brandon/Firehose/otis/otis-backend/app/models/link.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/brandon/Firehose/otis/otis-backend/app/models/links_tag.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/brandon/Firehose/otis/otis-backend/app/models/tag.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/brandon/Firehose/otis/otis-backend/app/controllers/application_controller.rb": [
+        0,
+        0
+      ]
+    },
+    "timestamp": 1463538402
+  }
+}

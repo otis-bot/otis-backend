@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 20160513160206) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
+
   add_foreign_key "comments", "links"
   add_foreign_key "links_tags", "links"
   add_foreign_key "links_tags", "tags"
