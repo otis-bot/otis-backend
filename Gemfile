@@ -4,6 +4,11 @@ gem 'rails', '4.2.6'
 gem 'rails-api'
 gem 'pg'
 
+gem 'grape'
+gem 'httparty'
+gem 'jwt'
+gem 'pry-rails'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
@@ -13,4 +18,8 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'shoulda-matchers'
 end
