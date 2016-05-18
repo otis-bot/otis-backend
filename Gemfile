@@ -5,6 +5,11 @@ gem 'rails-api'
 gem 'pg'
 gem 'coveralls', require: false
 
+gem 'grape'
+gem 'httparty'
+gem 'jwt'
+gem 'pry-rails'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
