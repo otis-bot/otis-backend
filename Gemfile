@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 gem 'rails-api'
 gem 'pg'
-gem 'figaro'
 gem 'coveralls', require: false
 
 group :development do
