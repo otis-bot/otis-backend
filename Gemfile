@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 gem 'rails-api'
 gem 'pg'
+gem 'coveralls', require: false
 
 gem 'grape'
 gem 'httparty'
