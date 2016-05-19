@@ -19,7 +19,7 @@ from the root.
 ##Testing
 
 After installing the required dependencies (please see above), type
-`bundle exec rspec` from the root.
+`bin/rspec` from the root.
 
 
 ##Licensing Information
