@@ -108,6 +108,7 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
+    puma (3.4.0)
     rack (1.6.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -211,6 +212,7 @@ DEPENDENCIES
   jwt
   pg
   pry-rails
+  puma
   rails (= 4.2.6)
   rails-api
   rspec-rails
@@ -218,3 +220,6 @@ DEPENDENCIES
   shoulda-matchers
   spring
   spring-commands-rspec
+
+BUNDLED WITH
+   1.12.3
