@@ -1,6 +1,6 @@
 module JWTAuthHelpers
   def current_user
-   user_info_from_header ? User.find_by(id:user_info_from_header.user_id) : nil
+   user_info_from_header ? User.find_by(id: user_info_from_header["user_id"]) : nil
   rescue JWT::DecodeError
     nil
   end
